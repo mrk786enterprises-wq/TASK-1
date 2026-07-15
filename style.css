@@ -1,0 +1,572 @@
+/* =====================================================
+   GOOGLE FONTS
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ballet&display=swap');
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#00bcd4;
+    --secondary:#0f172a;
+    --white:#ffffff;
+    --light:#f8fafc;
+    --text:#475569;
+
+    --gradient:linear-gradient(135deg,#4facfe,#00c6fb);
+
+    --shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#eef8ff;
+    color:var(--secondary);
+    line-height:1.7;
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo{
+
+    font-family:'Ballet',cursive;
+
+    font-size:45px;
+
+    color:#0077b6;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:var(--secondary);
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    color:#0f172a;
+
+}
+
+.hero-text h2{
+
+    font-size:30px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    font-size:17px;
+
+    color:var(--text);
+
+    margin-bottom:35px;
+
+    max-width:650px;
+
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:var(--gradient);
+
+    color:white;
+
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,188,212,.35);
+
+}
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:360px;
+
+    height:430px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    border:6px solid white;
+
+    box-shadow:
+
+    0 0 25px rgba(0,188,212,.35),
+
+    0 20px 50px rgba(0,0,0,.20);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about{
+
+    padding:80px 8%;
+
+    background:#f8fbff;
+
+}
+
+.about h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:var(--secondary);
+
+    margin-bottom:50px;
+
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+
+}
+
+.about-me{
+
+    grid-row:1 / 3;
+
+}
+
+.about-card{
+
+    background:var(--white);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-card h3{
+
+    color:var(--primary);
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+}
+
+.about-card p{
+
+    color:var(--text);
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+   SKILLS SECTION
+===================================================== */
+
+.skills{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.skills h2{
+
+    font-size:40px;
+
+    color:var(--secondary);
+
+    margin-bottom:50px;
+
+}
+
+.skill-box{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.card{
+
+    width:220px;
+
+    padding:25px;
+
+    background:var(--white);
+
+    border-radius:15px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--secondary);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    background:var(--gradient);
+
+    color:white;
+
+    transform:translateY(-8px);
+
+}
+/* =====================================================
+   PROJECTS SECTION
+===================================================== */
+
+.projects{
+
+    padding:80px 8%;
+
+    background:#f8fbff;
+
+    text-align:center;
+
+}
+
+.projects h2{
+
+    font-size:40px;
+
+    color:var(--secondary);
+
+    margin-bottom:50px;
+
+}
+
+.projects-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.project-card{
+
+    width:420px;
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+.project-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-size:40px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.contact>p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text);
+
+    margin-bottom:35px;
+
+}
+
+.contact-info{
+
+    width:650px;
+
+    margin:auto;
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-info p{
+
+    margin:18px 0;
+
+    font-size:17px;
+
+    color:var(--secondary);
+
+}
+
+.contact-info strong{
+
+    color:var(--primary);
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer p{
+
+    margin:6px 0;
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+}
